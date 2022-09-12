@@ -3,7 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControldeVentas", "ControldeVentas\ControldeVentas.csproj", "{0624CAC4-73B5-4A7B-9CEA-4D9B241F39D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControldeVentas.Bussiness", "ControldeVentas.Bussiness\ControldeVentas.Bussiness.csproj", "{251C3EC8-8603-4B2F-B60E-1A33A9AC6B87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControldeVentas.DataAccess", "ControldeVentas.DataAccess\ControldeVentas.DataAccess.csproj", "{5C159EBB-0010-43A7-846B-2C49492D8294}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControldeVentas.Interface", "ControldeVentas.Interface\ControldeVentas.Interface.csproj", "{C0DB6991-2125-41C1-BCFF-7B1731B079B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControldeVentas.Entity", "ControldeVentas.Entity\ControldeVentas.Entity.csproj", "{AD67DF43-96DE-4247-AFC9-27B82420A930}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ControldeVentas.Service", "ControldeVentas.Service\", "{0CE71325-5D4B-4A2E-971A-E482E4F09114}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{c0db6991-2125-41c1-bcff-7b1731b079b5}|ControldeVentas.Interface.dll;{ad67df43-96de-4247-afc9-27b82420a930}|ControldeVentas.Entity.dll;{251c3ec8-8603-4b2f-b60e-1a33a9ac6b87}|ControldeVentas.Bussiness.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_1455"
+		Debug.AspNetCompiler.PhysicalPath = "ControldeVentas.Service\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1455\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_1455"
+		Release.AspNetCompiler.PhysicalPath = "ControldeVentas.Service\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1455\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1455"
+		SlnRelativePath = "ControldeVentas.Service\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +40,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0624CAC4-73B5-4A7B-9CEA-4D9B241F39D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0624CAC4-73B5-4A7B-9CEA-4D9B241F39D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0624CAC4-73B5-4A7B-9CEA-4D9B241F39D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0624CAC4-73B5-4A7B-9CEA-4D9B241F39D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{251C3EC8-8603-4B2F-B60E-1A33A9AC6B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251C3EC8-8603-4B2F-B60E-1A33A9AC6B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251C3EC8-8603-4B2F-B60E-1A33A9AC6B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251C3EC8-8603-4B2F-B60E-1A33A9AC6B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C159EBB-0010-43A7-846B-2C49492D8294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C159EBB-0010-43A7-846B-2C49492D8294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C159EBB-0010-43A7-846B-2C49492D8294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C159EBB-0010-43A7-846B-2C49492D8294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0DB6991-2125-41C1-BCFF-7B1731B079B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0DB6991-2125-41C1-BCFF-7B1731B079B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0DB6991-2125-41C1-BCFF-7B1731B079B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0DB6991-2125-41C1-BCFF-7B1731B079B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD67DF43-96DE-4247-AFC9-27B82420A930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD67DF43-96DE-4247-AFC9-27B82420A930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD67DF43-96DE-4247-AFC9-27B82420A930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD67DF43-96DE-4247-AFC9-27B82420A930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CE71325-5D4B-4A2E-971A-E482E4F09114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE71325-5D4B-4A2E-971A-E482E4F09114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE71325-5D4B-4A2E-971A-E482E4F09114}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE71325-5D4B-4A2E-971A-E482E4F09114}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
